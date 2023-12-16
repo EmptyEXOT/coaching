@@ -28,7 +28,7 @@ const Navbar: FC<NavbarProps> = (props) => {
                         <Button>Team</Button>
                         <Button>Gallery</Button>
                     </div>
-                    <Button onClick={() => setIsOpen(prevState => !prevState)} className={classNames('md:hidden')}>
+                    <Button onClick={() => setIsOpen(prevState => !prevState)} className={classNames('md:hidden pe-0')}>
                         <Image alt={'menu'} src={Menu} width={36} height={24}></Image>
                     </Button>
                 </div>
