@@ -1,0 +1,14 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+}
+
+.open {
+    transform: translateY(0);
+    transition-duration: 400ms;
+}
+
+.close {
+    transform: translateY(-100%);
+    transition-duration: 400ms;
+}
