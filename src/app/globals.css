@@ -2,16 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
-  .btn {
-    @apply px-4
-  }
-}
-
 :root {
 }
 
 body {
   color: black;
   background: white;
+}
+
+.square {
+  display: flex;
+  height: 0;
+  padding-bottom: 100%;
+  width: 100%;
+  position: relative;
 }
