@@ -17,7 +17,7 @@ interface SectionProps {
 
 const Section: FC<SectionProps> = (props) => {
     return (
-        <div className={classNames('mx-auto p-2', props.isFullWidth ? cls.fullWidth : 'container', props.classNames)}>
+        <div className={classNames('mx-auto px-6', props.isFullWidth ? cls.fullWidth : 'container', props.classNames)}>
             {props.bg === BgVariant.Image ?
                 <ImagePlaceholder bgColor={ImgPlaceholderBgColor.dark} classNames={'absolute -z-10 h-screen'}/> : null}
             {props.children}

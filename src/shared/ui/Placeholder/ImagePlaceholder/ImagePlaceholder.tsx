@@ -18,7 +18,7 @@ interface ImagePlaceholderProps {
 const ImagePlaceholder: FC<ImagePlaceholderProps> = ({bgColor = ImgPlaceholderBgColor.light, ...props}) => {
     // const divRef = useRef<HTMLImageElement>(null)
     return (
-        <div className={classNames('w-full flex justify-center', props.classNames, bgColor)}>
+        <div className={classNames('w-full flex justify-center -z-10', props.classNames, bgColor)}>
             <div className={classNames('flex flex-col justify-center')}>
                 <Image alt={'image placeholder'} src={Placeholder} width={props.width} height={props.height}></Image>
             </div>
