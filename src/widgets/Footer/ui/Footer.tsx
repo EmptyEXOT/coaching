@@ -2,10 +2,11 @@ import React from 'react';
 import Logo from '../../Navbar/ui/Logo.svg'
 import Image from 'next/image'
 import classNames from "classnames";
-import Facebook from './Facebook.svg'
-import Instagram from './Instagram.svg'
-import Telegram from './Telegram.svg'
-import WhatsApp from './WhatsApp.svg'
+import Facebook from './assets/Facebook.svg'
+import Instagram from './assets/Instagram.svg'
+import Telegram from './assets/Telegram.svg'
+import WhatsApp from './assets/WhatsApp.svg'
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -24,24 +25,24 @@ const Footer = () => {
                         <p>[yourmail@yourmail.ru]</p>
                     </div>
                     <div className={classNames('flex gap-8')}>
-                        <Image alt={'icon'} src={Telegram} width={30}></Image>
-                        <Image alt={'icon'} src={Instagram} width={30}></Image>
-                        <Image alt={'icon'} src={Facebook} width={30}></Image>
-                        <Image alt={'icon'} src={WhatsApp} width={30}></Image>
+                        <Link href="https://t.me/idbeholdv"><Image alt={'icon'} src={Telegram} width={30}></Image></Link>
+                        <Link href="https://t.me/idbeholdv"><Image alt={'icon'} src={Instagram} width={30}></Image></Link>
+                        <Link href="https://t.me/idbeholdv"><Image alt={'icon'} src={Facebook} width={30}></Image></Link>
+                        <Link href="https://t.me/idbeholdv"><Image alt={'icon'} src={WhatsApp} width={30}></Image></Link>
                     </div>
                 </div>
                 <div className={classNames('flex flex-col gap-6 sm:flex-row sm:justify-between lg:flex-1')}>
                     <div className={classNames('flex flex-col gap-2 w-full')}>
-                        <a href=""><b>Link One</b></a>
-                        <a href=""><b>Link Two</b></a>
-                        <a href=""><b>Link Three</b></a>
-                        <a href=""><b>Link Four</b></a>
+                        <Link href="https://t.me/idbeholdv"><b>Link One</b></Link>
+                        <Link href="https://t.me/idbeholdv"><b>Link Two</b></Link>
+                        <Link href="https://t.me/idbeholdv"><b>Link Three</b></Link>
+                        <Link href="https://t.me/idbeholdv"><b>Link Four</b></Link>
                     </div>
                     <div className={classNames('flex flex-col gap-2 w-full')}>
-                        <a href=""><b>Link Five</b></a>
-                        <a href=""><b>Link Six</b></a>
-                        <a href=""><b>Link Seven</b></a>
-                        <a href=""><b>Link Eight</b></a>
+                        <Link href="https://t.me/idbeholdv"><b>Link Five</b></Link>
+                        <Link href="https://t.me/idbeholdv"><b>Link Six</b></Link>
+                        <Link href="https://t.me/idbeholdv"><b>Link Seven</b></Link>
+                        <Link href="https://t.me/idbeholdv"><b>Link Eight</b></Link>
                     </div>
                 </div>
             </div>
