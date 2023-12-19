@@ -6,7 +6,8 @@ import Image from "next/image";
 import Logo from './Logo.svg'
 import cls from './Navbar.module.css'
 import Button from "@/shared/ui/Button/Button";
-import Menu from './Menu.svg'
+import Menu from './Menu'
+import MenuIcon from './Menu.svg'
 
 interface NavbarProps {
 
@@ -29,21 +30,11 @@ const Navbar: FC<NavbarProps> = (props) => {
                         <Button className={classNames('z-50')}><b>Gallery</b></Button>
                     </div>
                     <Button onClick={() => setIsOpen(prevState => !prevState)} className={classNames('md:hidden pe-0')}>
-                        <Image alt={'menu'} src={Menu} width={36} height={24}></Image>
+                        <Image alt={'menu'} src={MenuIcon} width={36} height={24}></Image>
                     </Button>
                 </div>
-
             </div>
-            <div className={classNames('fixed top-14 bg-neutral-200 py-2 md:hidden justify-center z-0 w-screen bg-opacity-50 backdrop-blur-md', isOpen ? cls.open : cls.close)}>
-                <div className={classNames('container mx-auto')}>
-                <Button>Home</Button>
-                <Button>Feature</Button>
-                <Button>About</Button>
-                <Button>Contacts</Button>
-                <Button>Team</Button>
-                <Button>Gallery</Button>
-                </div>
-            </div>
+            <Menu isOpen={isOpen} />
         </>
 
     );

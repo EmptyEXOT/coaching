@@ -1,7 +1,7 @@
-import React, {FC, useRef} from 'react';
+import React, {FC} from 'react';
 import classNames from "classnames";
 import Image from "next/image";
-import Placeholder from "./ImagePlaceholder.png"
+import Placeholder from "./assets/ImagePlaceholder.png"
 
 export enum ImgPlaceholderBgColor {
     dark = 'bg-neutral-500',
