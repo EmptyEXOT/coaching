@@ -17,16 +17,16 @@ const Navbar: FC<NavbarProps> = (props) => {
 
     return (
         <>
-            <div className={classNames('bg-white border-b-2 z-50', cls.navbar)}>
-                <div className={classNames('container flex justify-between mx-auto p-2 z-50')}>
+            <div className={classNames('bg-neutral-100 md:bg-neutral-200 z-50 bg-opacity-100 md:bg-opacity-50 backdrop-blur-md', cls.navbar)}>
+                <div className={classNames('container flex justify-between mx-auto px-4 py-2 z-50')}>
                     <Image alt={'logo'} src={Logo}></Image>
                     <div className={classNames('hidden md:flex justify-center')}>
-                        <Button>Home</Button>
-                        <Button>Feature</Button>
-                        <Button>About</Button>
-                        <Button>Contacts</Button>
-                        <Button>Team</Button>
-                        <Button>Gallery</Button>
+                        <Button className={classNames('z-50')}><b>Home</b></Button>
+                        <Button className={classNames('z-50')}><b>Feature</b></Button>
+                        <Button className={classNames('z-50')}><b>About</b></Button>
+                        <Button className={classNames('z-50')}><b>Contacts</b></Button>
+                        <Button className={classNames('z-50')}><b>Team</b></Button>
+                        <Button className={classNames('z-50')}><b>Gallery</b></Button>
                     </div>
                     <Button onClick={() => setIsOpen(prevState => !prevState)} className={classNames('md:hidden pe-0')}>
                         <Image alt={'menu'} src={Menu} width={36} height={24}></Image>
@@ -34,7 +34,7 @@ const Navbar: FC<NavbarProps> = (props) => {
                 </div>
 
             </div>
-            <div className={classNames('fixed top-14 bg-white border-b-2 py-2 md:hidden justify-center z-0 w-screen', isOpen ? cls.open : cls.close)}>
+            <div className={classNames('fixed top-14 bg-neutral-200 py-2 md:hidden justify-center z-0 w-screen bg-opacity-50 backdrop-blur-md', isOpen ? cls.open : cls.close)}>
                 <div className={classNames('container mx-auto')}>
                 <Button>Home</Button>
                 <Button>Feature</Button>
